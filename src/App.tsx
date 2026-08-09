@@ -113,7 +113,7 @@ function AppRoutes() {
 
 function App() {
   return (
-    <BrowserRouter basename="/medicare_web">
+    <BrowserRouter>
       <AuthProvider>
         <ToastProvider>
           <ConfirmProvider>
