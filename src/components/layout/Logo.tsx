@@ -1,4 +1,5 @@
 import { cn } from '@/utils/cn'
+import logoImg from '@/assets/MedicaRe.png'
 
 interface LogoProps {
   collapsed?: boolean
@@ -11,7 +12,7 @@ export function Logo({ collapsed = false, light = false, className, imageOnly = 
   return (
     <div className={cn('flex items-center gap-2.5', className)}>
       <img
-        src="/MedicaRe.png"
+        src={logoImg}
         alt="Medicare"
         className={cn('shrink-0', imageOnly || collapsed ? 'size-9' : 'size-10')}
       />
